@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33524C42A5B63AEB09EBBC0A /* Pods_BirdBrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51000A3D40C918272161A3C2 /* Pods_BirdBrain.framework */; };
+		390562061093F533393B3DAB /* Pods_BirdBrainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CE93EEC6D38910B829FA1A /* Pods_BirdBrainTests.framework */; };
+		AFBBF1A531C52B8A3AD464F7 /* Pods_BirdBrain_BirdBrainUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CBB35FE9F90DA60FDEC823 /* Pods_BirdBrain_BirdBrainUITests.framework */; };
+		B0C4F3AD25168227005F9DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3AC25168227005F9DAB /* AppDelegate.swift */; };
+		B0C4F3AF25168227005F9DAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3AE25168227005F9DAB /* SceneDelegate.swift */; };
+		B0C4F3B125168227005F9DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3B025168227005F9DAB /* ViewController.swift */; };
+		B0C4F3B425168227005F9DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C4F3B225168227005F9DAB /* Main.storyboard */; };
+		B0C4F3B625168228005F9DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C4F3B525168228005F9DAB /* Assets.xcassets */; };
+		B0C4F3B925168228005F9DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C4F3B725168228005F9DAB /* LaunchScreen.storyboard */; };
+		B0C4F3C425168228005F9DAB /* BirdBrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3C325168228005F9DAB /* BirdBrainTests.swift */; };
+		B0C4F3CF25168228005F9DAB /* BirdBrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3CE25168228005F9DAB /* BirdBrainUITests.swift */; };
+		B0C4F3E325168397005F9DAB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3E225168397005F9DAB /* SignUpViewController.swift */; };
+		B0C4F3EB2516846D005F9DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0C4F3EA2516846D005F9DAB /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0C4F3C025168228005F9DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C4F3A125168227005F9DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C4F3A825168227005F9DAB;
+			remoteInfo = BirdBrain;
+		};
+		B0C4F3CB25168228005F9DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C4F3A125168227005F9DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C4F3A825168227005F9DAB;
+			remoteInfo = BirdBrain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51000A3D40C918272161A3C2 /* Pods_BirdBrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirdBrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DC4ABF95B6141B8C274462 /* Pods-BirdBrain-BirdBrainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrain-BirdBrainUITests.release.xcconfig"; path = "Target Support Files/Pods-BirdBrain-BirdBrainUITests/Pods-BirdBrain-BirdBrainUITests.release.xcconfig"; sourceTree = "<group>"; };
+		974EF945DB98747E19CE17C2 /* Pods-BirdBrain-BirdBrainUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrain-BirdBrainUITests.debug.xcconfig"; path = "Target Support Files/Pods-BirdBrain-BirdBrainUITests/Pods-BirdBrain-BirdBrainUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A260DC424C0A96D24C88DC4F /* Pods-BirdBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrain.release.xcconfig"; path = "Target Support Files/Pods-BirdBrain/Pods-BirdBrain.release.xcconfig"; sourceTree = "<group>"; };
+		AD9D7617D2EE9A81E852BFB9 /* Pods-BirdBrainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrainTests.debug.xcconfig"; path = "Target Support Files/Pods-BirdBrainTests/Pods-BirdBrainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C4F3A925168227005F9DAB /* BirdBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C4F3AC25168227005F9DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0C4F3AE25168227005F9DAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0C4F3B025168227005F9DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0C4F3B325168227005F9DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0C4F3B525168228005F9DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0C4F3B825168228005F9DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0C4F3BA25168228005F9DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C4F3BF25168228005F9DAB /* BirdBrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdBrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C4F3C325168228005F9DAB /* BirdBrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdBrainTests.swift; sourceTree = "<group>"; };
+		B0C4F3C525168228005F9DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C4F3CA25168228005F9DAB /* BirdBrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdBrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C4F3CE25168228005F9DAB /* BirdBrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdBrainUITests.swift; sourceTree = "<group>"; };
+		B0C4F3D025168228005F9DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C4F3E225168397005F9DAB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B0C4F3EA2516846D005F9DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3CBB35FE9F90DA60FDEC823 /* Pods_BirdBrain_BirdBrainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirdBrain_BirdBrainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD26F63955DB081FB8E6A2BF /* Pods-BirdBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrain.debug.xcconfig"; path = "Target Support Files/Pods-BirdBrain/Pods-BirdBrain.debug.xcconfig"; sourceTree = "<group>"; };
+		E2BE2E2531D29273F03EA02E /* Pods-BirdBrainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrainTests.release.xcconfig"; path = "Target Support Files/Pods-BirdBrainTests/Pods-BirdBrainTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1CE93EEC6D38910B829FA1A /* Pods_BirdBrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirdBrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0C4F3A625168227005F9DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33524C42A5B63AEB09EBBC0A /* Pods_BirdBrain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C4F3BC25168228005F9DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390562061093F533393B3DAB /* Pods_BirdBrainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C4F3C725168228005F9DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBBF1A531C52B8A3AD464F7 /* Pods_BirdBrain_BirdBrainUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5951986AB76CE64A2E4ACF6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD26F63955DB081FB8E6A2BF /* Pods-BirdBrain.debug.xcconfig */,
+				A260DC424C0A96D24C88DC4F /* Pods-BirdBrain.release.xcconfig */,
+				974EF945DB98747E19CE17C2 /* Pods-BirdBrain-BirdBrainUITests.debug.xcconfig */,
+				64DC4ABF95B6141B8C274462 /* Pods-BirdBrain-BirdBrainUITests.release.xcconfig */,
+				AD9D7617D2EE9A81E852BFB9 /* Pods-BirdBrainTests.debug.xcconfig */,
+				E2BE2E2531D29273F03EA02E /* Pods-BirdBrainTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A72A8017C2D5C06A5C4A7734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51000A3D40C918272161A3C2 /* Pods_BirdBrain.framework */,
+				C3CBB35FE9F90DA60FDEC823 /* Pods_BirdBrain_BirdBrainUITests.framework */,
+				F1CE93EEC6D38910B829FA1A /* Pods_BirdBrainTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0C4F3A025168227005F9DAB = {
+			isa = PBXGroup;
+			children = (
+				B0C4F3AB25168227005F9DAB /* BirdBrain */,
+				B0C4F3C225168228005F9DAB /* BirdBrainTests */,
+				B0C4F3CD25168228005F9DAB /* BirdBrainUITests */,
+				B0C4F3AA25168227005F9DAB /* Products */,
+				5951986AB76CE64A2E4ACF6A /* Pods */,
+				A72A8017C2D5C06A5C4A7734 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0C4F3AA25168227005F9DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0C4F3A925168227005F9DAB /* BirdBrain.app */,
+				B0C4F3BF25168228005F9DAB /* BirdBrainTests.xctest */,
+				B0C4F3CA25168228005F9DAB /* BirdBrainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0C4F3AB25168227005F9DAB /* BirdBrain */ = {
+			isa = PBXGroup;
+			children = (
+				B0C4F3AC25168227005F9DAB /* AppDelegate.swift */,
+				B0C4F3AE25168227005F9DAB /* SceneDelegate.swift */,
+				B0C4F3B025168227005F9DAB /* ViewController.swift */,
+				B0C4F3E225168397005F9DAB /* SignUpViewController.swift */,
+				B0C4F3B225168227005F9DAB /* Main.storyboard */,
+				B0C4F3B525168228005F9DAB /* Assets.xcassets */,
+				B0C4F3B725168228005F9DAB /* LaunchScreen.storyboard */,
+				B0C4F3EA2516846D005F9DAB /* GoogleService-Info.plist */,
+				B0C4F3BA25168228005F9DAB /* Info.plist */,
+			);
+			path = BirdBrain;
+			sourceTree = "<group>";
+		};
+		B0C4F3C225168228005F9DAB /* BirdBrainTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0C4F3C325168228005F9DAB /* BirdBrainTests.swift */,
+				B0C4F3C525168228005F9DAB /* Info.plist */,
+			);
+			path = BirdBrainTests;
+			sourceTree = "<group>";
+		};
+		B0C4F3CD25168228005F9DAB /* BirdBrainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0C4F3CE25168228005F9DAB /* BirdBrainUITests.swift */,
+				B0C4F3D025168228005F9DAB /* Info.plist */,
+			);
+			path = BirdBrainUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0C4F3A825168227005F9DAB /* BirdBrain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C4F3D325168228005F9DAB /* Build configuration list for PBXNativeTarget "BirdBrain" */;
+			buildPhases = (
+				755C4897476D9C09500C1B95 /* [CP] Check Pods Manifest.lock */,
+				B0C4F3A525168227005F9DAB /* Sources */,
+				B0C4F3A625168227005F9DAB /* Frameworks */,
+				B0C4F3A725168227005F9DAB /* Resources */,
+				33EAC4627C00AA43E8F22B0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdBrain;
+			productName = BirdBrain;
+			productReference = B0C4F3A925168227005F9DAB /* BirdBrain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0C4F3BE25168228005F9DAB /* BirdBrainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C4F3D625168228005F9DAB /* Build configuration list for PBXNativeTarget "BirdBrainTests" */;
+			buildPhases = (
+				0A03A60A7F79F2B7867698B5 /* [CP] Check Pods Manifest.lock */,
+				B0C4F3BB25168228005F9DAB /* Sources */,
+				B0C4F3BC25168228005F9DAB /* Frameworks */,
+				B0C4F3BD25168228005F9DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C4F3C125168228005F9DAB /* PBXTargetDependency */,
+			);
+			name = BirdBrainTests;
+			productName = BirdBrainTests;
+			productReference = B0C4F3BF25168228005F9DAB /* BirdBrainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0C4F3C925168228005F9DAB /* BirdBrainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C4F3D925168228005F9DAB /* Build configuration list for PBXNativeTarget "BirdBrainUITests" */;
+			buildPhases = (
+				18996FE9AFFF419C5492A2B4 /* [CP] Check Pods Manifest.lock */,
+				B0C4F3C625168228005F9DAB /* Sources */,
+				B0C4F3C725168228005F9DAB /* Frameworks */,
+				B0C4F3C825168228005F9DAB /* Resources */,
+				0A2D00396222D97D0ABF72B5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C4F3CC25168228005F9DAB /* PBXTargetDependency */,
+			);
+			name = BirdBrainUITests;
+			productName = BirdBrainUITests;
+			productReference = B0C4F3CA25168228005F9DAB /* BirdBrainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0C4F3A125168227005F9DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B0C4F3A825168227005F9DAB = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					B0C4F3BE25168228005F9DAB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = B0C4F3A825168227005F9DAB;
+					};
+					B0C4F3C925168228005F9DAB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = B0C4F3A825168227005F9DAB;
+					};
+				};
+			};
+			buildConfigurationList = B0C4F3A425168227005F9DAB /* Build configuration list for PBXProject "BirdBrain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0C4F3A025168227005F9DAB;
+			productRefGroup = B0C4F3AA25168227005F9DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0C4F3A825168227005F9DAB /* BirdBrain */,
+				B0C4F3BE25168228005F9DAB /* BirdBrainTests */,
+				B0C4F3C925168228005F9DAB /* BirdBrainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0C4F3A725168227005F9DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C4F3B925168228005F9DAB /* LaunchScreen.storyboard in Resources */,
+				B0C4F3B625168228005F9DAB /* Assets.xcassets in Resources */,
+				B0C4F3B425168227005F9DAB /* Main.storyboard in Resources */,
+				B0C4F3EB2516846D005F9DAB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C4F3BD25168228005F9DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C4F3C825168228005F9DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A03A60A7F79F2B7867698B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirdBrainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A2D00396222D97D0ABF72B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirdBrain-BirdBrainUITests/Pods-BirdBrain-BirdBrainUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirdBrain-BirdBrainUITests/Pods-BirdBrain-BirdBrainUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BirdBrain-BirdBrainUITests/Pods-BirdBrain-BirdBrainUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18996FE9AFFF419C5492A2B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirdBrain-BirdBrainUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33EAC4627C00AA43E8F22B0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirdBrain/Pods-BirdBrain-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirdBrain/Pods-BirdBrain-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BirdBrain/Pods-BirdBrain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755C4897476D9C09500C1B95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirdBrain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0C4F3A525168227005F9DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C4F3B125168227005F9DAB /* ViewController.swift in Sources */,
+				B0C4F3AD25168227005F9DAB /* AppDelegate.swift in Sources */,
+				B0C4F3E325168397005F9DAB /* SignUpViewController.swift in Sources */,
+				B0C4F3AF25168227005F9DAB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C4F3BB25168228005F9DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C4F3C425168228005F9DAB /* BirdBrainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C4F3C625168228005F9DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C4F3CF25168228005F9DAB /* BirdBrainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0C4F3C125168228005F9DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0C4F3A825168227005F9DAB /* BirdBrain */;
+			targetProxy = B0C4F3C025168228005F9DAB /* PBXContainerItemProxy */;
+		};
+		B0C4F3CC25168228005F9DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0C4F3A825168227005F9DAB /* BirdBrain */;
+			targetProxy = B0C4F3CB25168228005F9DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0C4F3B225168227005F9DAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0C4F3B325168227005F9DAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0C4F3B725168228005F9DAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0C4F3B825168228005F9DAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0C4F3D125168228005F9DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0C4F3D225168228005F9DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0C4F3D425168228005F9DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD26F63955DB081FB8E6A2BF /* Pods-BirdBrain.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9Y3WP5593;
+				INFOPLIST_FILE = BirdBrain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeffreyHuang.BirdBrain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0C4F3D525168228005F9DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A260DC424C0A96D24C88DC4F /* Pods-BirdBrain.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9Y3WP5593;
+				INFOPLIST_FILE = BirdBrain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeffreyHuang.BirdBrain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0C4F3D725168228005F9DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9D7617D2EE9A81E852BFB9 /* Pods-BirdBrainTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9Y3WP5593;
+				INFOPLIST_FILE = BirdBrainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeffreyHuang.BirdBrainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdBrain.app/BirdBrain";
+			};
+			name = Debug;
+		};
+		B0C4F3D825168228005F9DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BE2E2531D29273F03EA02E /* Pods-BirdBrainTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9Y3WP5593;
+				INFOPLIST_FILE = BirdBrainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeffreyHuang.BirdBrainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdBrain.app/BirdBrain";
+			};
+			name = Release;
+		};
+		B0C4F3DA25168228005F9DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974EF945DB98747E19CE17C2 /* Pods-BirdBrain-BirdBrainUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9Y3WP5593;
+				INFOPLIST_FILE = BirdBrainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeffreyHuang.BirdBrainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdBrain;
+			};
+			name = Debug;
+		};
+		B0C4F3DB25168228005F9DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DC4ABF95B6141B8C274462 /* Pods-BirdBrain-BirdBrainUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9Y3WP5593;
+				INFOPLIST_FILE = BirdBrainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeffreyHuang.BirdBrainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdBrain;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0C4F3A425168227005F9DAB /* Build configuration list for PBXProject "BirdBrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C4F3D125168228005F9DAB /* Debug */,
+				B0C4F3D225168228005F9DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C4F3D325168228005F9DAB /* Build configuration list for PBXNativeTarget "BirdBrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C4F3D425168228005F9DAB /* Debug */,
+				B0C4F3D525168228005F9DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C4F3D625168228005F9DAB /* Build configuration list for PBXNativeTarget "BirdBrainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C4F3D725168228005F9DAB /* Debug */,
+				B0C4F3D825168228005F9DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C4F3D925168228005F9DAB /* Build configuration list for PBXNativeTarget "BirdBrainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C4F3DA25168228005F9DAB /* Debug */,
+				B0C4F3DB25168228005F9DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0C4F3A125168227005F9DAB /* Project object */;
+}
