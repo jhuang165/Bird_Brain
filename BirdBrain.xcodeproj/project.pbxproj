@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,12 @@
 		B0C4F3CF25168228005F9DAB /* BirdBrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3CE25168228005F9DAB /* BirdBrainUITests.swift */; };
 		B0C4F3E325168397005F9DAB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4F3E225168397005F9DAB /* SignUpViewController.swift */; };
 		B0C4F3EB2516846D005F9DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0C4F3EA2516846D005F9DAB /* GoogleService-Info.plist */; };
+		B0CBBA9525290C52000BCF80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBBA9425290C52000BCF80 /* HomeViewController.swift */; };
+		B0CBBA9A25290CAC000BCF80 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBBA9925290CAC000BCF80 /* NewViewController.swift */; };
+		B0CBBAA525290CB8000BCF80 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBBAA425290CB8000BCF80 /* ProfileViewController.swift */; };
+		B0CBBAAA25290DE4000BCF80 /* icons8-user.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CBBAA925290DE4000BCF80 /* icons8-user.png */; };
+		B0CBBAAF25290DF2000BCF80 /* icons8-home.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CBBAAE25290DF2000BCF80 /* icons8-home.png */; };
+		B0CBBAB425290DF7000BCF80 /* icons8-add.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CBBAB325290DF7000BCF80 /* icons8-add.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		B0C4F3D025168228005F9DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C4F3E225168397005F9DAB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B0C4F3EA2516846D005F9DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B0CBBA9425290C52000BCF80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0CBBA9925290CAC000BCF80 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		B0CBBAA425290CB8000BCF80 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B0CBBAA925290DE4000BCF80 /* icons8-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-user.png"; sourceTree = "<group>"; };
+		B0CBBAAE25290DF2000BCF80 /* icons8-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-home.png"; sourceTree = "<group>"; };
+		B0CBBAB325290DF7000BCF80 /* icons8-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add.png"; sourceTree = "<group>"; };
 		C3CBB35FE9F90DA60FDEC823 /* Pods_BirdBrain_BirdBrainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirdBrain_BirdBrainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26F63955DB081FB8E6A2BF /* Pods-BirdBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrain.debug.xcconfig"; path = "Target Support Files/Pods-BirdBrain/Pods-BirdBrain.debug.xcconfig"; sourceTree = "<group>"; };
 		E2BE2E2531D29273F03EA02E /* Pods-BirdBrainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdBrainTests.release.xcconfig"; path = "Target Support Files/Pods-BirdBrainTests/Pods-BirdBrainTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +117,6 @@
 				AD9D7617D2EE9A81E852BFB9 /* Pods-BirdBrainTests.debug.xcconfig */,
 				E2BE2E2531D29273F03EA02E /* Pods-BirdBrainTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,11 +159,17 @@
 				B0C4F3AE25168227005F9DAB /* SceneDelegate.swift */,
 				B0C4F3B025168227005F9DAB /* ViewController.swift */,
 				B0C4F3E225168397005F9DAB /* SignUpViewController.swift */,
+				B0CBBA9425290C52000BCF80 /* HomeViewController.swift */,
+				B0CBBA9925290CAC000BCF80 /* NewViewController.swift */,
+				B0CBBAA425290CB8000BCF80 /* ProfileViewController.swift */,
 				B0C4F3B225168227005F9DAB /* Main.storyboard */,
 				B0C4F3B525168228005F9DAB /* Assets.xcassets */,
 				B0C4F3B725168228005F9DAB /* LaunchScreen.storyboard */,
 				B0C4F3EA2516846D005F9DAB /* GoogleService-Info.plist */,
 				B0C4F3BA25168228005F9DAB /* Info.plist */,
+				B0CBBAAE25290DF2000BCF80 /* icons8-home.png */,
+				B0CBBAB325290DF7000BCF80 /* icons8-add.png */,
+				B0CBBAA925290DE4000BCF80 /* icons8-user.png */,
 			);
 			path = BirdBrain;
 			sourceTree = "<group>";
@@ -283,8 +300,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CBBAAF25290DF2000BCF80 /* icons8-home.png in Resources */,
 				B0C4F3B925168228005F9DAB /* LaunchScreen.storyboard in Resources */,
 				B0C4F3B625168228005F9DAB /* Assets.xcassets in Resources */,
+				B0CBBAB425290DF7000BCF80 /* icons8-add.png in Resources */,
+				B0CBBAAA25290DE4000BCF80 /* icons8-user.png in Resources */,
 				B0C4F3B425168227005F9DAB /* Main.storyboard in Resources */,
 				B0C4F3EB2516846D005F9DAB /* GoogleService-Info.plist in Resources */,
 			);
@@ -414,8 +434,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CBBA9525290C52000BCF80 /* HomeViewController.swift in Sources */,
 				B0C4F3B125168227005F9DAB /* ViewController.swift in Sources */,
 				B0C4F3AD25168227005F9DAB /* AppDelegate.swift in Sources */,
+				B0CBBA9A25290CAC000BCF80 /* NewViewController.swift in Sources */,
+				B0CBBAA525290CB8000BCF80 /* ProfileViewController.swift in Sources */,
 				B0C4F3E325168397005F9DAB /* SignUpViewController.swift in Sources */,
 				B0C4F3AF25168227005F9DAB /* SceneDelegate.swift in Sources */,
 			);

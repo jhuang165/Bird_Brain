@@ -20,7 +20,13 @@ class ViewController: UIViewController {
         signIn.isEnabled = false
         email.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
         password.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        email.resignFirstResponder()
+        password.resignFirstResponder()
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {

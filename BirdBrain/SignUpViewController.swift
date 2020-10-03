@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
     
@@ -22,7 +23,15 @@ class SignUpViewController: UIViewController {
         email.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
         password.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
         username.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        self.view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+        username.resignFirstResponder()
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
@@ -37,6 +46,12 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
             if (error == nil) {
                 // sign in -> perform segue to home page
+                let ref = Database.database().reference()
+                let df = DateFormatter()
+                df.dateFormat = "yyyy-MMM-dd HH:mm:ss"
+                let date = Date()
+                let dateString = df.string(from: date)
+                ref.child("users").child((authResult?.user.uid)!).setValue(["email": authResult?.user.email!, "username": self.username.text!, "join": dateString])
                 self.performSegue(withIdentifier: "signup", sender: self)
             } else {
                 let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

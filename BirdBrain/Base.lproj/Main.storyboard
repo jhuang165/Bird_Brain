@@ -59,7 +59,7 @@
                         <outlet property="email" destination="Id1-gv-QsL" id="Uwt-ra-rfB"/>
                         <outlet property="password" destination="y9i-Gu-arL" id="N7y-1U-8P3"/>
                         <outlet property="signIn" destination="KRq-Ur-yGm" id="uVO-4b-t2e"/>
-                        <segue destination="TXl-jP-sl8" kind="presentation" identifier="signin" modalPresentationStyle="fullScreen" id="F3i-i0-FrV"/>
+                        <segue destination="ijh-R7-R0O" kind="presentation" identifier="signin" modalPresentationStyle="fullScreen" id="F3i-i0-FrV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,33 +124,102 @@
                         <outlet property="password" destination="xEN-eU-GAJ" id="jRg-Cf-Sb8"/>
                         <outlet property="signUp" destination="Er3-hk-QTC" id="MlA-rn-9u4"/>
                         <outlet property="username" destination="UBH-fx-Q59" id="chv-fd-blD"/>
-                        <segue destination="TXl-jP-sl8" kind="presentation" identifier="signup" modalPresentationStyle="fullScreen" id="ThU-zV-EgY"/>
+                        <segue destination="ijh-R7-R0O" kind="presentation" identifier="signup" modalPresentationStyle="fullScreen" id="ThU-zV-EgY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e6-z6-Zml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="993" y="104"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="oTT-jS-QGu">
             <objects>
-                <viewController id="TXl-jP-sl8" sceneMemberID="viewController">
+                <viewController id="TXl-jP-sl8" customClass="HomeViewController" customModule="BirdBrain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fZS-Td-A5c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="L8z-i6-SKJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="icons8-home.png" id="2W7-6M-hPZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHV-8C-oUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="102"/>
+            <point key="canvasLocation" x="2784.8000000000002" y="101.19940029985008"/>
+        </scene>
+        <!--My Profile-->
+        <scene sceneID="Y0G-Ge-nGd">
+            <objects>
+                <viewController id="aBt-rb-OV2" customClass="ProfileViewController" customModule="BirdBrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lvv-Gb-u1h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hi-22-gZd">
+                                <rect key="frame" x="157" y="546" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="aBt-rb-OV2" eventType="touchUpInside" id="oOz-Bc-Use"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F62-ft-usO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="icons8-user.png" id="fnN-46-2Ml"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signout" modalPresentationStyle="fullScreen" id="keV-F3-yw4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDM-6Y-EiZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785" y="787"/>
+        </scene>
+        <!--New Sound-->
+        <scene sceneID="Kwr-I6-9OT">
+            <objects>
+                <viewController id="nOs-e7-ZVf" customClass="NewViewController" customModule="BirdBrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehU-2M-DlY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6oV-Kf-JLc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New Sound" image="icons8-add.png" id="jf9-4D-RJr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woA-fc-bVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785" y="-544"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sjB-KT-mnU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ijh-R7-R0O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Ky-iA-FeG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TXl-jP-sl8" kind="relationship" relationship="viewControllers" id="DD2-8U-R3k"/>
+                        <segue destination="nOs-e7-ZVf" kind="relationship" relationship="viewControllers" id="DGI-zp-wTA"/>
+                        <segue destination="aBt-rb-OV2" kind="relationship" relationship="viewControllers" id="jdh-W9-ZRz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bQ-aA-eQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845.5999999999999" y="101.19940029985008"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ThU-zV-EgY"/>
+        <segue reference="keV-F3-yw4"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="icons8-add.png" width="25" height="25"/>
+        <image name="icons8-home.png" width="25" height="25"/>
+        <image name="icons8-user.png" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

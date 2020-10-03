@@ -8,6 +8,7 @@ target 'BirdBrain' do
   # Pods for BirdBrain
 	pod 'Firebase'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
   target 'BirdBrainTests' do
     inherit! :search_paths
     # Pods for testing
